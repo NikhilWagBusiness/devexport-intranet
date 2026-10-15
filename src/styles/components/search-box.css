@@ -1,0 +1,39 @@
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 53px;
+  margin: 24px 0 35px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.search-box > svg {
+  flex-shrink: 0;
+  color: #8290a4;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+}
+
+.search-box input::placeholder {
+  color: var(--placeholder);
+}
+
+/* The wrapper shows the focus ring, so the input itself needs none. */
+.search-box:focus-within {
+  border-color: #91b2df;
+  box-shadow: 0 0 0 3px rgb(50 104 178 / 8%);
+}
+
+.empty-message {
+  color: var(--muted);
+}

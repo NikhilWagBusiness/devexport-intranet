@@ -1,0 +1,61 @@
+.item-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.item-title {
+  margin: 0 0 4px;
+  color: var(--text-strong);
+  font-size: 13px;
+}
+
+.item-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.item-summary {
+  margin: 8px 0 0;
+  color: #4a596d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--surface-tint);
+  color: var(--blue);
+  font: 600 10px var(--font-body);
+  text-transform: capitalize;
+  vertical-align: middle;
+}
+
+/* Inside a panel the list is flat (no nested cards). */
+.panel .item-list {
+  gap: 0;
+}
+
+.panel .item {
+  padding: 12px 0;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+}
+
+.panel .item:last-child {
+  border-bottom: 0;
+}
